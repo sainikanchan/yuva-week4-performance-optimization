@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Pulse — a lightweight performance-focused frontend dashboard.">
+<title>Pulse — Performance Optimized Dashboard</title>
+<link rel="preload" href="hero.svg" as="image" type="image/svg+xml">
+<link rel="stylesheet" href="style.min.css">
+<script src="script.min.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#" aria-label="Pulse home">PULSE<span>.</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#overview">Overview</a><a href="#metrics">Metrics</a><a href="#features">Features</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero container" id="overview">
+  <div class="hero-copy">
+    <p class="eyebrow">PERFORMANCE-FIRST UI</p>
+    <h1>Fast interfaces feel effortless.</h1>
+    <p class="lead">A lightweight dashboard demonstrating practical frontend performance optimization without sacrificing usability or visual quality.</p>
+    <div class="actions"><a class="btn primary" href="#metrics">View metrics</a><a class="btn secondary" href="#features">Explore features</a></div>
+  </div>
+  <div class="hero-art"><img src="hero.svg" width="640" height="420" alt="Abstract performance dashboard illustration"></div>
+</section>
+
+<section class="section container" id="metrics">
+  <div class="section-head"><p class="eyebrow">LIVE DEMO</p><h2>Core metrics</h2></div>
+  <div class="metric-grid">
+    <article class="metric"><span>Load efficiency</span><strong>92%</strong><small>Optimized assets</small></article>
+    <article class="metric"><span>Script cost</span><strong>18 KB</strong><small>Minified JavaScript</small></article>
+    <article class="metric"><span>Visual weight</span><strong>34 KB</strong><small>SVG-first graphics</small></article>
+  </div>
+</section>
+
+<section class="section container" id="features">
+  <div class="section-head"><p class="eyebrow">OPTIMIZATION</p><h2>What changed</h2></div>
+  <div class="feature-grid">
+    <article class="card"><h3>Smaller payload</h3><p>CSS and JavaScript are minified, while decorative graphics use compact SVG instead of heavy raster images.</p></article>
+    <article class="card"><h3>Deferred execution</h3><p>The interactive script uses <code>defer</code>, keeping HTML parsing and first paint free from blocking JavaScript.</p></article>
+    <article class="card"><h3>Lazy media</h3><p>Below-the-fold imagery is loaded lazily with explicit dimensions to reduce network work and layout shifts.</p></article>
+    <article class="card"><h3>Lean DOM</h3><p>The page uses semantic sections and a small number of elements, reducing styling and scripting overhead.</p></article>
+  </div>
+  <div class="demo-media">
+    <img src="secondary.svg" width="1200" height="650" loading="lazy" decoding="async" alt="Secondary performance visualization">
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><strong>PULSE.</strong><span>Built as a Week 4 frontend performance optimization project.</span></div></footer>
+</body>
+</html>
